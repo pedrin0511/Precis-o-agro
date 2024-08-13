@@ -1,0 +1,25 @@
+.sair{
+    display: flex;
+    align-items: center;
+}
+
+.sair button{
+    width: 5em;
+    height: 3em;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.sair button:hover{
+    background-color: #4e634f; 
+    color: #f0f0f0; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

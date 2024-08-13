@@ -1,0 +1,17 @@
+.container{
+    background-color: rgba(22, 138, 22, 0.719);
+    color: rgb(233, 247, 233);
+    font-size: 1.3em;
+    
+}
+
+.container nav{
+    display: flex;
+    justify-content: center;
+    gap: 20em;
+    
+}
+
+.container img{
+    width: 5em;
+}

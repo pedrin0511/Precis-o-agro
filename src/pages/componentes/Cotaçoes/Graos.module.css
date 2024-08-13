@@ -1,0 +1,24 @@
+.container{
+    border: 1px solid rgb(130, 226, 146);
+    text-align: center;
+    background-color: rgb(124, 235, 143);
+    color: rgb(25, 134, 47);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container li a{
+    text-decoration: none;
+    color: rgb(25, 134, 47);
+    font-size: 19px;
+    transition: .6s;
+}
+
+.container li a:hover{
+    color: white;
+}
