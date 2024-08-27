@@ -1,5 +1,7 @@
 
 import Graos from '../componentes/Cotaçoes/Graos'
+import Chat from './Chat'
+ 
 
 import Navbar from "./Navbar"
 
@@ -9,6 +11,7 @@ function Home() {
         <div>
             <Navbar/>
             <Graos/>
+            <Chat/>
             
             
         </div>

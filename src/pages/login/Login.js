@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, setPersistence, signInWithEmailAndPassword, browserLocalPersistence } from "firebase/auth";
 import style from './Log.module.css'
 import { IoIosEyeOff, IoIosEye } from "react-icons/io";
 
@@ -19,8 +19,11 @@ function Login() {
         e.preventDefault()
 
         const auth = getAuth()
-
-        signInWithEmailAndPassword(auth,email,password)
+        
+        setPersistence(auth,browserLocalPersistence)
+        .then(()=>{
+            return signInWithEmailAndPassword(auth,email,password)
+        })
         .then((userCredential)=>{
             const user = userCredential.user
             navigate("/home")
